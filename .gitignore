@@ -3,3 +3,5 @@ test/bin
 .vscode/
 lib/obj
 lib/bin
+app/obj
+app/bin
