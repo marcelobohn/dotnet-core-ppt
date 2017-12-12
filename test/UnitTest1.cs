@@ -1,5 +1,6 @@
 using System;
 using Xunit;
+using lib;
 
 namespace test
 {
@@ -11,7 +12,7 @@ namespace test
             PPT ppt = new PPT("João", "Marcos");
             ppt.jogador1_material = "Papel";
             ppt.jogador2_material = "Pedra";            
-            Assert.Equal(ppt.vencedor, "João");
+            Assert.Equal("João", ppt.vencedor());
         }
     }
 }
