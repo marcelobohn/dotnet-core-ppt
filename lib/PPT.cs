@@ -14,7 +14,14 @@ namespace lib
             this.jogador2_nome = nome2;
         }
         public string vencedor() {
-            return "João";
+            if (
+                (jogador1_material == "Pedra" && jogador2_material == "Tesoura") ||
+                (jogador1_material == "Papel" && jogador2_material == "Pedra") ||
+                (jogador1_material == "Tesoura" && jogador2_material == "Papel")
+            )
+                return this.jogador1_nome;
+            else
+                return this.jogador2_nome;
         }
     }
 }
