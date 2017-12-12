@@ -1,3 +1,5 @@
 test/obj
 test/bin
 .vscode/
+lib/obj
+lib/bin
